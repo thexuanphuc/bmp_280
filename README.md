@@ -4,6 +4,12 @@
 ## Mô tả
 Tìm hiểu cách đọc dữ liệu và hiệu chỉnh [BMP280](https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf) trực tiếp trong arduino, không thông qua library
 
+Ta cần đọc cả giá trị nhiệt độ temperature để hiệu chỉnh giá trị áp suất pressure. Từ giá trị áp suất , có thể tính độ cao theo công :
+
+altitude = 44330 * [1 - (P / p0)^(1/5.255)]
+
+p0 - Áp suất biển trung bình 1013,25 mbar 
+
 ## Sơ đồ lắp ghép BMP280 và Arduino Uno
 note: VCC 3.3v
 
