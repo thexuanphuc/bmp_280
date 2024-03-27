@@ -21,7 +21,9 @@ note: VCC 3.3v
 ## Cách hiệu chỉnh
 
 Trong hàm setup(), lấy trung bình 200 giá trị độ cao làm giá trị ban đầu (AltitudeBarometerStartUp)
+
 Điều chỉnh độ nhạy của cảm biến cho indoor/outdoor (sampling for temperature, pressure, normal mode) thông qua register 0xF4 
+
 Điều chỉnh hệ số cho IIR filter thông qua register 0xF5
 
 
