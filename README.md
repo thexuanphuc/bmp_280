@@ -1,0 +1,29 @@
+
+# Làm quen với BMP280 và Arduino Uno
+
+## Mô tả
+Tìm hiểu cách đọc dữ liệu và hiệu chỉnh [BMP280](https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf) trực tiếp trong arduino, không thông qua library
+
+## Sơ đồ lắp ghép BMP280 và Arduino Uno
+
+|  pin  |  Tên pin  |  Ý ngnghĩa        | Chân Arduino |
+|:-----:|:---------:|:------------------|--------------|
+|   0   |    VCC    |  supply pin       |    3.3V      |
+|   1   |    GND    |  ground           |     GND      |
+|   2   |    SCL    |  I2C clock        |     A5       |
+|   3   |    SDA    |  I2C data         |     A4       |
+|   4   |    CSB    | SPI / Chip Select |              |
+|   5   |    SDO    | SPI address       |              |
+
+![image]()
+
+## Cách hiệu chỉnh
+
+Trong hàm setup(), lấy trung bình 200 giá trị độ cao làm giá trị ban đầu (AltitudeBarometerStartUp)
+
+
+
+# Kết quả
+
+## Nguồn liên quan
+  + 
