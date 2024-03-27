@@ -6,7 +6,10 @@ Tìm hiểu cách đọc dữ liệu và hiệu chỉnh [BMP280](https://cdn-sho
 
 Ta cần đọc cả giá trị nhiệt độ temperature để hiệu chỉnh giá trị áp suất pressure. Từ giá trị áp suất , có thể tính độ cao theo công :
 
-altitude = 44330 * [1 - (P / p0)^(1/5.255)]
+$$
+\text{altitude} = 44330 \times \left(1 - \left(\frac{P}{p0}\right)^{1/5.255}\right)
+$$
+
 
 p0 - Áp suất biển trung bình 1013,25 mbar 
 
