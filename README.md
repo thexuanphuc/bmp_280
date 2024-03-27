@@ -6,7 +6,7 @@ Tìm hiểu cách đọc dữ liệu và hiệu chỉnh [BMP280](https://cdn-sho
 
 ## Sơ đồ lắp ghép BMP280 và Arduino Uno
 
-|  pin  |  Tên pin  |  Ý ngnghĩa        | Chân Arduino |
+|  pin  |  Tên pin  |    Ý nghĩa        | Chân Arduino |
 |:-----:|:---------:|:------------------|--------------|
 |   0   |    VCC    |  supply pin       |    3.3V      |
 |   1   |    GND    |  ground           |     GND      |
@@ -20,10 +20,10 @@ Tìm hiểu cách đọc dữ liệu và hiệu chỉnh [BMP280](https://cdn-sho
 ## Cách hiệu chỉnh
 
 Trong hàm setup(), lấy trung bình 200 giá trị độ cao làm giá trị ban đầu (AltitudeBarometerStartUp)
-
-
+Điều chỉnh độ nhạy của cảm biến cho indoor/outdoor (sampling for temperature, pressure, normal mode) thông qua register 0xF4 
+Điều chỉnh hệ số cho IIR filter thông qua register 0xF5
 
 # Kết quả
 
 ## Nguồn liên quan
-  + 
+  + https://github.com/CarbonAeronautics
